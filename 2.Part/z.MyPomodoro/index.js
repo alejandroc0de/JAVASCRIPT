@@ -1,4 +1,5 @@
 
+let rain = document.getElementById("botonRain")
 let boton45 = document.getElementById("45min")
 let boton15 = document.getElementById("15min")
 let boton25 = document.getElementById("25min")
@@ -13,7 +14,20 @@ let tiempoGiven;
 let minutos;
 let segundosCount = 59;
 
+//---------------  Rin buttom logic --------------------
+rain.addEventListener("click", () => {
+    let rainy = document.getElementById("rainy") // save audio reference to play with it 
+    if(rainy.paused){
+        rainy.play();
+        rain.classList.toggle("active"); // modify css sheet 
+    } else{
+        rainy.pause();
+        rainy.currentTime = 0;
+        rain.classList.remove("active");
+    }
+})
 
+let successSound = document.getElementById("success")
 boton45.addEventListener("click",()=>startClock(44))
 boton15.addEventListener("click",()=>startClock(14))
 boton25.addEventListener("click",()=>startClock(24))
@@ -47,6 +61,7 @@ cancel.addEventListener("click", () => {clearInterval(intervalo) // here we just
 
 
 function countDown(){
+    successSound.load() // not allowed audio after no interaction solution 
     if(!minutos || minutos<=0){
         alert("Choose a period of time first");
         return;
@@ -59,7 +74,7 @@ function countDown(){
             clearInterval(intervalo)
             intervalo = null
             document.getElementById("pomodoro").textContent = `00:00:00`
-            document.getElementById("success").play()
+            successSound.play()
             return;
         }
 
