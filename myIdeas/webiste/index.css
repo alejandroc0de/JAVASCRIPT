@@ -1,0 +1,54 @@
+body{
+    margin: 0px;
+    background-color: rgb(248, 252, 255);
+}
+#topBar{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(235, 237, 237);
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(228, 236, 252);
+}
+#h1Top{
+    font-family: 'Rouge Script';
+    font-size: 1.5em;
+    font-weight: 100;
+    font-style: italic;
+    padding-left: 20px ;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1em;
+    justify-content: flex-start;
+    font-family: 'Rouge Script';
+    font-size: 1.5em;
+    padding-right: 40px;
+}
+.navbar ul li:hover{
+    transform: scale(1.2);
+    color: rgb(2, 152, 245);
+}
+#helloText{
+    align-self: center;
+}
+#photoME{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+#photo{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+#textPhoto{
+    padding: 10px 300px;
+    line-height: 1.8;
+    text-align: auto;
+}

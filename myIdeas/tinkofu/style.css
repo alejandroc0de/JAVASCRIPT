@@ -1,0 +1,75 @@
+body{
+    background-color: hsl(220, 46%, 82%);
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mydiv1{
+    vertical-align:middle;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: large;
+}
+
+#maindiv1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+
+#rightSide{
+    text-align: center;
+    width: 50%;
+}
+
+#leftSide{
+    text-align: center;
+    width: 50%;
+}
+
+#labelLogin{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(4, 56, 134);
+}
+
+#rightSide input{
+    margin-bottom: 15px;
+    border: none;
+    padding: 10px;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgb(2, 3, 100);
+    background-color: rgb(216, 234, 238);
+    font-size: 1.2em;
+     
+}
+#rightSide label{
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+#botonSubmit{
+    font-size: 20px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    padding: 0px 10px;
+    margin-top: 20px;
+}
+#botonSubmit:hover{
+    background-color: hsl(208, 71%, 73%);
+    cursor: pointer;
+    transform: scale(1.35);
+}
+#botonSubmit:active{
+    background-color: rgb(240, 240, 240);
+}

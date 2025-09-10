@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(165, 193, 193);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+form{
+    border: 2px solid;
+    border-radius: 5px;
+}
+#submitButton{
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+#submitButton:hover{
+    display: inline-block;
+    transform:scale(1.3);
+    background-color: bisque;
+
+}
+
+#textBox{
+    font-size: 1em;
+    text-align: center;
+}
+
+label{
+    font-size: 1.3em;
+}
+
+#result{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    color: rgb(188, 26, 26);
+}
