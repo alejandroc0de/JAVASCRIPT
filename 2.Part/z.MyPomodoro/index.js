@@ -19,7 +19,7 @@ boton15.addEventListener("click",()=>startClock(14))
 boton25.addEventListener("click",()=>startClock(24))
 boton5.addEventListener("click",()=>startClock(4))
 
-// ---------------- Start clock modifies the inital clock after choosing an option ----------------------------
+// ---------------- Start clock modifies the inital clock after choosing an option ---------------------------
 function startClock(tiempo){
     clearInterval(intervalo)
     intervalo=null
