@@ -181,3 +181,95 @@ h1:hover{
 #priorityL:hover{
     transform: scale(1.2);
 }
+
+@media (max-width: 768px){
+
+    body{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    
+    .input {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    #icon{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    #dueDate{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        justify-self: center;
+
+    }
+
+    .input input{
+        width: 99%;
+        font-size: 1rem;
+    }
+    
+    #labelPriority{
+        display: block;
+        margin: 0 auto;        
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    #priorityL{
+        text-align: center;
+        justify-self: center;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    #submitButton{
+        display: block;
+        margin: 0 auto;
+        height: 50px;
+        padding: auto;
+        height: 50px;
+    }
+    
+    .displayHeader{
+        background-color: rgbargba(255, 255, 255, 0)
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 0.6fr;
+        font-size: 1rem;
+        gap: 20px;
+        padding: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+        margin-bottom: 10px;
+        border-radius: 20px;
+    }
+
+    .displayTask{
+        display: grid;
+        grid-template-columns: 4fr 1.4fr 1fr 0.6fr;
+        font-size: 0.8rem;
+        margin: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 15px;
+    }
+    .displayTask .taskPriority{
+        margin-right: 20px;
+    }
+
+    .displayTask .selectStatus{
+        font-size: 0.7rem;
+        width: 100px;
+    }
+
+
+
+}
