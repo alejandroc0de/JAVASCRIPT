@@ -19,14 +19,23 @@
     <div class="body">
         <div class="input"> 
             <input id="taskInput" type="" placeholder="Enter a task" >
+        <label for="dueDate">📆</label>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <input type="text" id="dueDate">
         <label id="labelPriority" for="priorityL">Priority:</label>
         <select name="" id="priorityL">
             <option value="High">High</option>
             <option value="Mid">Mid</option>
             <option value="Low">Low</option>
         </select>
+        
+
+
+
         <button onclick="getTask()" id="submitButton">
-            📥
+            ⌲
         </button>
         </div>
 
@@ -40,6 +49,7 @@
                     <option value="Completed">Completed</option>
                     <option value="In-Progress">In-Progress</option>
                 </select>
+                <span class="dueIn"></span>
 
             </div>
         </template>
@@ -50,6 +60,7 @@
             <span>Task</span>
             <span>Priority</span>
             <span>Status</span>
+            <span>Due in</span>
         </div>
         <div class="displayTasks">
 
