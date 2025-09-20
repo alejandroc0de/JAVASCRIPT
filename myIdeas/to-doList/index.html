@@ -19,26 +19,37 @@
     <div class="body">
         <div class="input"> 
             <input id="taskInput" type="" placeholder="Enter a task" >
-    
+        </div>
         <label for="priorityL">Priority:</label>
         <select name="" id="priorityL">
             <option value="High">High</option>
             <option value="Mid">Mid</option>
             <option value="Low">Low</option>
         </select>
-        <button id="submitButton">
+        <button onclick="getTask()" id="submitButton">
             📥
         </button>
-        </div>
 
+        <template id="plantillaTasks">
+            <div class="displayTask">
+                <span class="taskText">Lorem ipsum dolor sit ame lore
+                </span>
+                <span class="taskPriority"></span>
+                <select name="" class="selectStatus">
+                    <option value="Not Started">Not Started</option>
+                    <option value="Completed">Completed</option>
+                    <option value="In-Progress">In-Progress</option>
+                </select>
+
+            </div>
+        </template>
+
+        <br><br><br>
+        <h2> Tasks Pending:
+
+        </h2>
         <div class="displayTasks">
-            <p>Lorem ipsum dolor sit ame
-            <select name="" id="">
-                <option value="Not Started">Not Started</option>
-                <option value="Completed">Completed</option>
-                <option value="In-Progress">In-Progress</option>
-            </select>
-            </p>
+
         </div>
 
 

@@ -24,6 +24,9 @@ body{
     margin-bottom: 20px; 
     margin-right: 20px;
 }
+.selectStatus{
+    width: 200px;
+}
 
 .body label, select{
     font-size: 1.5rem;
@@ -44,4 +47,15 @@ body{
 }
 .body button:active{
     background-color: hsl(185, 89%, 73%);
+}
+
+.displayTask{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px rgb(69, 82, 82)
 }
