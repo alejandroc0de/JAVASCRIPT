@@ -1,5 +1,7 @@
 body{
-    background-color: rgba(177, 221, 255, 0.617);
+    background-color: rgba(177, 221, 255, 0.402);
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #headings{
@@ -10,22 +12,37 @@ body{
 
 #h1{
     font-family: monospace;
+    font-size: 3rem;
+    transition: all 0.2s ease;
+}
+h1:hover{
+    transform: scale(1.1);
+
 }
 
 #taskInput {
+    background-color: rgba(129, 128, 128, 0.238);
     font-size: 2rem;
-    color: black;;
+    color: rgb(0, 0, 0);;
     width: 500px;
     height: 35px;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 40px;
     border: none;
     font-family: monospace;
-    margin-bottom: 20px; 
+    margin-bottom: 40px; 
     margin-right: 20px;
+    transition: all 0.2s ease;
+}
+
+#taskInput:hover{
+    transform: scale(1.05);
+}
+#submitButton:hover{
+    transform: scale(1.20);
 }
 .selectStatus{
-    width: 200px;
+    width: 140px;
 }
 
 .body label, select{
@@ -41,21 +58,107 @@ body{
     background-color: hsl(0, 0%, 100%);
     padding: 8px;
     box-shadow: 2px 2px 5px grey;
+    transition: all 0.2s ease;
 }
-.body button:hover{
-    background-color: hsla(185, 76%, 79%, 0.405);
-}
+
 .body button:active{
-    background-color: hsl(185, 89%, 73%);
+    background-color: hsl(0, 1%, 76%);
+}
+
+.displayHeader{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 10px 8px;
+    padding: 10px;
+    background-color: rgba(26, 26, 27, 0.074);
+}
+
+.displayHeader span{
+    transition: all 0.2s ease;
+}
+.displayHeader span:hover{
+    transform: scale(1.05);
 }
 
 .displayTask{
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 0.6fr 0.9fr;
     align-items: center;
-    justify-content: space-between;
     background-color: white;
     padding: 10px;
     margin: 8px;
     border-radius: 30px;
-    box-shadow: 2px 2px 5px rgb(69, 82, 82)
+    box-shadow: 2px 2px 5px rgb(69, 82, 82);
+    transition: all 0.2s ease;
+}
+
+.displayTask{
+    font-family: monospace;
+    font-size: 1.3rem;
+}
+
+.displayTask.High{
+    background-color: hsla(0, 100%, 79%, 0.381);
+}
+.displayTask.Mid{
+    background-color: hsla(54, 96%, 65%, 0.314);
+}
+.displayTask.Low{
+    background-color: hsla(108, 94%, 65%, 0.374);
+}
+.displayTask:hover {
+    transform: scale(1.02);
+}
+
+.selectStatus {
+  appearance: none;      /* elimina el estilo por defecto */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 140px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  font-size: 0.95rem;
+  font-family: monospace;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.selectStatus:hover {
+  border-color: #888;
+  background-color: #f1f1f1;
+}
+
+.selectStatus:focus {
+  outline: none;
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79,172,254,0.5);
+}
+
+#priorityL {
+  appearance: none;      /* elimina el estilo por defecto */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 140px;
+  height: 40px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  font-size: 0.95rem;
+  font-family: monospace;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#labelPriority{
+    margin-left: 10px;
+}
+#priorityL:hover{
+    transform: scale(1.2);
 }

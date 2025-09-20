@@ -19,8 +19,7 @@
     <div class="body">
         <div class="input"> 
             <input id="taskInput" type="" placeholder="Enter a task" >
-        </div>
-        <label for="priorityL">Priority:</label>
+        <label id="labelPriority" for="priorityL">Priority:</label>
         <select name="" id="priorityL">
             <option value="High">High</option>
             <option value="Mid">Mid</option>
@@ -29,6 +28,7 @@
         <button onclick="getTask()" id="submitButton">
             📥
         </button>
+        </div>
 
         <template id="plantillaTasks">
             <div class="displayTask">
@@ -45,9 +45,12 @@
         </template>
 
         <br><br><br>
-        <h2> Tasks Pending:
 
-        </h2>
+        <div class="displayHeader">
+            <span>Task</span>
+            <span>Priority</span>
+            <span>Status</span>
+        </div>
         <div class="displayTasks">
 
         </div>
