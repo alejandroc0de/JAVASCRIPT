@@ -34,6 +34,27 @@ app.post('/submit', async(req,res) => {
     }
 });
 
+app.get('/respuestas', async(req,res) => {
+    try{
+        const result = await pool.query('SELECT * FROM respuestas');
+        res.json(result.rows)
+    } catch (err){
+        console.error("Error al consultar la base de datos")
+        res.status(500).send("Error al consultar la base de datos");
+    }
+});
+
+
+app.delete('/delete', async (req,res) => {
+    try{
+
+    }catch(err){
+
+    }
+});
+
+
 app.listen(3000, () => {
     console.log("Servidor corriendo en el puerto 3000")
-})
+});
+
