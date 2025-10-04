@@ -1,0 +1,26 @@
+#home{
+    text-align: center;
+    background-color: rgb(187, 250, 255);
+    font-family:'Times New Roman', Times, serif;
+}
+
+#h1Home{
+    font-size: 4rem;
+    color: rgb(69, 69, 68);
+}
+
+#home nav li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    list-style: none; 
+    padding: 20px;
+    transition: transform 1s ease;
+}
+
+#navbar li:hover{
+    color: black;
+    transform: scale(1.2);
+}
