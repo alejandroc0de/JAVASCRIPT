@@ -8,45 +8,39 @@
 </head>
 
 <body>
-    <header>
-        <h1> Cuestionario La Salle </h1>
-        <nav>
-            <li><a href="index.html">Inicio</a>
-            </li>
-            <li> <a href="cuestionario.html">Cuestionario</a>
-            </li>
-        </nav>
-    </header>
-
-
-
-    <main>
-        <form action="/submit" method="post">
-            <div id="preguntas">
-                <input type="text" name="nombre" placeholder="¿Cual es tu nombre?">
-                <input type="text" name="apellido" placeholder="¿Cual es tu apellido?">
-                <input type="text" name="semestre" placeholder="¿En que semestre te encuentras?">
-                <input type="text" name="feedback" placeholder="¿Que feedback quieres dejarnos?">
-                <button>Submit</button>
+    <div id="cuestionarioMain">
+        <header>
+            <h1> Cuestionario La Salle </h1>
+            <nav>
+                <li><a href="index.html">Inicio</a>
+                </li>
+                <li> <a href="cuestionario.html">Cuestionario</a>
+                </li>
+            </nav>
+        </header>
+        <main>
+            <form action="/submit" method="post">
+                <div id="preguntas">
+                    <input type="text" name="nombre" placeholder="¿Cual es tu nombre?">
+                    <input type="text" name="apellido" placeholder="¿Cual es tu apellido?">
+                    <input type="text" name="semestre" placeholder="¿En que semestre te encuentras?">
+                    <input type="text" name="feedback" placeholder="¿Que feedback quieres dejarnos?">
+                    <button>Submit</button>
+                </div>
+            </form>
+            <div>
+                <button id="botonGetInfo">
+                    Ver Resultados
+                </button>
             </div>
-        </form>
 
-        <div>
-            <button id="botonGetInfo">
-                Ver Resultados
-            </button>
-        </div>
-
-        <div id="listaShow">
-            <li>
-            </li>
-        </div>
-
-    </main>
-
-
-
-   
+            <div id="listaShow">
+                <li>
+                </li>
+            </div>
+        </main>
+    </div>
+    
     <footer>
 
     </footer>
