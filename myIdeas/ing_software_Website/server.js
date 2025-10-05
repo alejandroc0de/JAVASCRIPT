@@ -45,11 +45,23 @@ app.get('/respuestas', async(req,res) => {
 });
 
 
-app.delete('/delete', async (req,res) => {
+app.delete('/respuestas/:id', async (req,res) => {
+    const {id} = req.params;
     try{
-
+        const result = await pool.query(
+            'DELETE FROM respuestas WHERE id = $1 RETURNING *',
+            [id]
+        );
+        console.log(result)
+        if(result.rowCount === 0){
+            console.log("Objeto no existe en la base de datos o error al eliminar")
+            return res.status(404).send("No se encontre el ID en la base de datos")
+        }
+        console.log("Elemento borrado")
+        res.json({message: "Respuesta eliminada", deleted: result.rows[0]});
     }catch(err){
-
+        console.log("Error al eliminar", err)
+        res.status(500).send("error al eliminar");
     }
 });
 
